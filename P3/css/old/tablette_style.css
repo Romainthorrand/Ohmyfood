@@ -1,0 +1,317 @@
+header {
+  text-align: center;
+  height: 65px;
+  padding: 1rem;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  width: 240px;
+  height: 45px;
+  margin: 40px 0 80px 0;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+.btn:hover {
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  background: linear-gradient(#a16be0, #ff93e1);
+}
+
+.logo_titres_font {
+  font-family: "Shrikhand", cursive;
+  font-style: italic;
+  margin: 20px 0 35px 35px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 180px;
+  background-color: #2d2f31;
+  color: white;
+  line-height: 25px;
+  padding: 20px;
+}
+
+.lien_footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.footer_content {
+  text-align: center;
+}
+
+.logo_footer {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.footer_icon {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding: 0 5px 0 20px;
+}
+
+.footer_font {
+  font-family: "Shrikhand", cursive;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  width: 75%;
+  margin: 25px 12% 20px 12%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-weight: 900;
+  margin: 0 7% 0 7%;
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.logo {
+  width: 175px;
+  height: 35px;
+}
+
+.hero {
+  margin: 0 0 30px 0;
+  background-color: #f6f6f6;
+}
+
+.hero_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text_hero {
+  width: 80%;
+  opacity: 0.6;
+  text-align: center;
+  margin: 0 7% 0 7%;
+  font-weight: 200;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2e3e3;
+  height: 65px;
+}
+.location ::placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #e2e3e3;
+  opacity: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.location input {
+  border: none;
+  background-color: #e2e3e3;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.location_point {
+  margin: 10px;
+}
+
+.cards {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+  margin: 0 10px 0 10px;
+}
+.card__fonctionnement {
+  width: 100%;
+  height: 70px;
+  list-style-type: none;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  font-weight: 900;
+  transition: 350ms;
+}
+.card__fonctionnement:hover {
+  cursor: pointer;
+  background-color: #e8e1f1;
+}
+.card__fonctionnement:hover .fonctionnement_icon {
+  color: #9356DC;
+}
+.card__restaurants {
+  width: 95%;
+  flex-direction: column;
+  align-content: center;
+  margin-top: 15px;
+}
+.card__restaurants:hover {
+  background-color: #e8e1f1;
+}
+
+.restaurant_description {
+  display: flex;
+  flex-direction: row;
+}
+
+.restaurants_name {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.restaurants_heart {
+  position: relative;
+  padding-top: 7%;
+}
+
+.heart {
+  position: absolute;
+  right: 25px;
+  top: 30%;
+  color: black;
+  margin: 10px;
+}
+
+.heart_color {
+  position: absolute;
+  right: 25px;
+  top: 30%;
+  color: #9356DC;
+  margin: 10px;
+  opacity: 0;
+  transition: 350ms;
+}
+.heart_color:hover {
+  opacity: 1;
+}
+
+.fonctionnement_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+
+.list_style {
+  margin-left: -10px;
+}
+
+.fonctionnement_icon {
+  margin-left: 5%;
+}
+
+.list {
+  border: 1px solid #9356DC;
+  padding: 14px 10px 14px 10px;
+  border-radius: 20px;
+  background-color: #9356DC;
+  color: white;
+}
+
+.icon_hover {
+  margin: 0 25px 0 0;
+}
+
+.fonctionnement_text {
+  justify-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.images_restaurants {
+  width: 100%;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.restaurant {
+  display: flex;
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 60px 0 50px 0;
+  margin-top: 40px;
+}
+
+.nom_restaurant {
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  align-content: center;
+  padding-left: 25px;
+}
+
+.palette_note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.lafrancaise_delice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid blue;
+}/*# sourceMappingURL=tablette_style.css.map */
