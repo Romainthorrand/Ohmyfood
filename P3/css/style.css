@@ -1,3 +1,5 @@
+
+
 .logo_titres_font {
   font-family: "Shrikhand", cursive;
   font-size: 1.9rem;
@@ -84,6 +86,7 @@ footer {
 .footer_icon {
   display: flex;
   align-items: center;
+  color: white;
   padding-right: 5px;
 }
 
@@ -91,6 +94,7 @@ footer {
   font-family: "Shrikhand", cursive;
   font-size: 25px;
   margin: 0 0 10px 0;
+  color:white;
 }
 
 .loading_page {
@@ -267,7 +271,7 @@ body {
 
 a {
   text-decoration: none;
-  color: black;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -285,6 +289,7 @@ h2 {
 }
 
 p {
+  color: black;
   font-size: 1.2rem;
   font-weight: 400;
 }
@@ -579,6 +584,7 @@ p {
   }
   .lien_footer {
     display: flex;
+    font-family:;
     justify-content: center;
     margin-top: 35px;
   }
@@ -613,6 +619,13 @@ p {
   .fonctionnement_icon {
     margin-left: 5%;
   }
+}
+
+.contact {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+
 }
 
     /* desktop */
