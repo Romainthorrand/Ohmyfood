@@ -5,6 +5,8 @@
   margin: 20px 0 35px 15px;
 }
 
+    /* Bouton Explorer nos Restaurant */
+
 .btn {
   width: 260px;
   height: 60px;
@@ -21,6 +23,8 @@
   cursor: pointer;
   background: linear-gradient(#a16be0, #ff93e1);
 }
+
+    /* Header */
 
 header {
   display: flex;
@@ -56,6 +60,8 @@ header {
   color: #9356DC;
   transform: scale(1.3);
 }
+
+    /* Footer version smartphone */
 
 footer {
   width: 100%;
@@ -100,7 +106,8 @@ footer {
   background: white;
 }
 
-/*.CSS du loader*/
+    /*.CSS du loader*/
+
 .loading {
   height: 100px;
 }
@@ -125,6 +132,8 @@ footer {
   font-size: 13px;
 }
 
+    /* Keyframes pour l'apparition et la disparition du loader */
+
 @keyframes disparition {
   0% {
     opacity: 1;
@@ -138,6 +147,9 @@ footer {
     z-index: -1;
   }
 }
+
+    /* Keyframes du clignotement lettres du loader */
+
 @keyframes flash {
   0% {
     color: #FF79DA;
@@ -152,6 +164,9 @@ footer {
     text-shadow: 0 0 7px #9356DC;
   }
 }
+
+    /* Animation pour passer d'une lettre a l'autre du loader */
+
 .letter:nth-child(1) {
   animation-delay: 0.1s;
 }
@@ -184,6 +199,8 @@ footer {
   animation-delay: 0.8s;
 }
 
+    /* Cercle du loader */
+
 .circle {
   display: flex;
   height: 100px;
@@ -198,11 +215,17 @@ footer {
   height: 50px;
 }
 
+    /* Rotation du cercle du loader */
+
+    /* Partie fixe du cercle */
+
 .rotary_loader {
   border-radius: 50px;
   border: 8px solid silver;
   opacity: 0.6;
 }
+
+    /* Partie rottative du cercle */
 
 .rotary_loader::after {
   content: "";
@@ -217,6 +240,8 @@ footer {
   animation: rolling 1.5s linear infinite;
 }
 
+  /* Keyframes pour la rotation sur le cercle */
+
 @keyframes rolling {
   0% {
     transform: rotate(0deg);
@@ -225,6 +250,8 @@ footer {
     transform: rotate(360deg);
   }
 }
+
+
 * {
   margin: 0;
   padding: 0;
@@ -288,6 +315,8 @@ p {
   font-size: 1.4rem;
 }
 
+    /* Zone de recherche de localisation */
+
 .location {
   display: flex;
   justify-content: center;
@@ -323,6 +352,8 @@ p {
   margin: 10px;
 }
 
+    /* Cards */
+
 .cards {
   width: 100%;
   display: flex;
@@ -338,6 +369,9 @@ p {
   background-color: #f6f6f6;
   box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
 }
+
+    /* Partie Fonctionnement */
+
 .card__fonctionnement {
   width: 80%;
   height: 80px;
@@ -352,10 +386,16 @@ p {
   cursor: pointer;
   background-color: #e8e1f1;
 }
+
+    /* Animation au survol pour la card et l'icon */
+
 .card__fonctionnement:hover .fonctionnement_icon {
   color: #9356DC;
   transform: scale(1.2) rotate(10deg);
 }
+
+    /* Partie restaurant */
+
 .card__restaurants {
   width: 85%;
   position: relative;
@@ -378,6 +418,8 @@ p {
   width: 100%;
 }
 
+    /* Animation du coeur */
+
 .restaurants_heart {
   position: relative;
   padding-top: 7%;
@@ -392,6 +434,8 @@ p {
   margin: 10px;
   opacity: 1;
 }
+
+    /* Couleur du linear-gradient du coeur */
 
 .stop_un {
   stop-color: #9356DC;
@@ -461,6 +505,8 @@ p {
   object-fit: cover;
 }
 
+    /* Logo Nouveau */
+
 .nouveau {
   position: absolute;
   top: 20px;
@@ -480,6 +526,8 @@ p {
   color: green;
 }
 
+/* Restaurant complete "container" */
+
 .restaurant {
   display: flex;
   background-color: #f6f6f6;
@@ -494,6 +542,8 @@ p {
   font-size: 1.3rem;
   padding: 15px 0 15px 15px;
 }
+
+    /* Div pour version tablette à deux colonnes */
 
 .palette_note {
   display: flex;
@@ -511,8 +561,12 @@ p {
   width: 100%;
 }
 
-/* tablette */
+    /* tablette */
+
 @media screen and (min-width: 750px) {
+
+    /* mise en flex du footer */
+
   footer {
     display: flex;
     flex-direction: column;
@@ -560,7 +614,9 @@ p {
     margin-left: 5%;
   }
 }
-/* desktop */
+
+    /* desktop */
+
 @media screen and (min-width: 1100px) {
   .card__restaurants {
     margin-top: 25px;
@@ -570,6 +626,9 @@ p {
   .images_restaurants {
     height: 500px;
   }
+
+      /* Passage de toutes les cardes en ligne */
+
   .palette_note {
     flex-direction: row;
     margin: auto;

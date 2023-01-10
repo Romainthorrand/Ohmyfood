@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+    /* Header */
+
 header {
   display: flex;
   flex-direction: row;
@@ -21,6 +24,8 @@ header {
   width: 100%;
 }
 
+    /* Fleche de retour vers acceuil */
+
 .arrow_back {
   align-content: center;
 }
@@ -35,6 +40,8 @@ header {
   color: #9356DC;
   transform: scale(1.3);
 }
+
+    /* Footer version smartphone */
 
 footer {
   width: 100%;
@@ -66,6 +73,8 @@ footer {
   margin: 0 0 10px 0;
 }
 
+    /* Bouton commander */
+
 .btn {
   width: 260px;
   height: 60px;
@@ -82,6 +91,8 @@ footer {
   cursor: pointer;
   background: linear-gradient(#a16be0, #ff93e1);
 }
+
+    /* Titre des entrées, plats et desserts */
 
 .titres {
   text-transform: uppercase;
@@ -155,6 +166,8 @@ main {
   padding-top: 7%;
 }
 
+    /* Coeur avec animation */
+
 .heart {
   position: absolute;
   width: 1.5em;
@@ -164,6 +177,8 @@ main {
   margin: 10px;
   opacity: 1;
 }
+
+    /* Couleur du linear gradient du coeur */
 
 .stop_un {
   stop-color: #9356DC;
@@ -202,6 +217,8 @@ main {
   padding: 10px;
 }
 
+    /* Animation d'appartion des plats */
+
 .entrees {
   animation: slideDown 1.5s;
 }
@@ -214,6 +231,8 @@ main {
   animation: slideDown 7s;
 }
 
+    /* Cards des plats */
+
 .sousmenus {
   display: flex;
   width: 95%;
@@ -224,6 +243,9 @@ main {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
+
+    /* Animation des plats au hover */
+
 .sousmenus:hover .text_restaurant {
   max-width: 200%;
   min-width: 50%;
@@ -248,6 +270,9 @@ main {
   background-color: #99E2D0;
   animation: tempo_anim_restaurant 500ms;
 }
+
+    /* Animation du check vert au hover sur les plats */
+
 .sousmenus:hover .fa-circle-check {
   display: flex;
   animation: checked 400ms ease-in-out 150ms;
@@ -286,12 +311,16 @@ main {
   display: none;
 }
 
+    /* point si manque de place du text */
+
 .point {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+    /* Keyframes apparition temporisé dur vert au survol sur plat */
 
 @keyframes tempo_anim_restaurant {
   0% {
@@ -301,6 +330,8 @@ main {
     width: 30%;
   }
 }
+
+
 @keyframes tempo_text_restaurant {
   0% {
     width: 80%;
@@ -309,6 +340,9 @@ main {
     width: 50%;
   }
 }
+
+    /* Rotation du check */
+
 @keyframes checked {
   from {
     transform: rotate(360deg);
@@ -317,6 +351,9 @@ main {
     transform: rotate(0);
   }
 }
+
+    /* Arrivé des plats verticalement pour smartphone  */
+
 @keyframes slideDown {
   from {
     transform: translateY(-30px);
@@ -326,6 +363,8 @@ main {
     transform: translateY(0);
     opacity: 1;
   }
+
+
 }
 .commander {
   display: flex;
@@ -333,8 +372,13 @@ main {
   justify-content: center;
 }
 
-/* Tablette */
+
+    /* Tablette */
+
 @media screen and (min-width: 750px) and (max-width: 1099px) {
+  
+      /* Passage en flex du footer */
+
   footer {
     display: flex;
     flex-direction: column;
@@ -413,7 +457,8 @@ main {
     padding: 5px;
   }
 }
-/* desktop */
+    /* desktop */
+
 @media screen and (min-width: 1100px) {
   footer {
     display: flex;
@@ -504,6 +549,9 @@ main {
   .sousmenus:hover .text_restaurant {
     width: 80%;
   }
+
+    /* Keyframes pour appartion des plats horizontalement */
+
   @keyframes slideDown {
     from {
       transform: translateX(-30px);
